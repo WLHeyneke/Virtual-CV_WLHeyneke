@@ -5,8 +5,8 @@
 :root {
   --header-height: 3.5rem;
 
-  --hue: 210;
-  --first-color: hsl(var(--hue), 100%, 40%);
+  --hue: 199;
+  --first-color: hsl(var(--hue), 98%, 54%);
   --first-color-alt: hsl(var(--hue), 56%, 35%);
   --title-color: hsl(224, 70%, 89%);
   --text-color: hsl(228, 8%, 65%);
@@ -230,7 +230,22 @@ svg {
 }
 
 /*_____Add blur to header_____*/
+.blur-header {
+  background-color: transparent;
+}
 
+.blur-header::after {
+  content: "";
+  position: absolute;
+  width: 1000%;
+  height: 100%;
+  background-color: hsla(0, 0%, 10%, 0.3);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px); /* for Safari*/
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
 /*_____Active link_____*/
 
 /*_____HOME_____*/
@@ -312,8 +327,8 @@ svg {
   background-color: var(--first-color);
   padding: 1rem 1.75rem;
   border-radius: 0.5rem;
-  color: var(--title-color);
-  font-weight: var(--font-medium);
+  color: white;
+  font-weight: var(--font-semi-bold);
   transition: box-shadow 0.4s;
 }
 
@@ -322,8 +337,72 @@ svg {
 }
 
 /*_____ABOUT_____*/
+.about__container {
+  row-gap: 2.5rem;
+}
 
+.about__data {
+  text-align: center;
+}
+
+.about__description {
+  margin-bottom: 2rem;
+}
+
+.about__image {
+  justify-self: center;
+}
+
+.about__blob {
+  width: 320px;
+}
+
+.about__blob path {
+  stroke: var(--first-color);
+}
 /*_____SKILLS_____*/
+.skills {
+  background-color: var(--container-color);
+}
+
+.skills__container {
+  padding-bottom: 2rem;
+  row-gap: 3.5rem;
+}
+
+.skills__data {
+  text-align: center;
+}
+
+.skills__descriptiom {
+  margin-bottom: 2rem;
+}
+
+.skills__content,
+.skills_group {
+  display: grid;
+}
+
+.skills__content {
+  grid-template-columns: repeat(2, max-content);
+  column-gap: 4rem;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.skills__group {
+  row-gap: 1rem;
+  list-style: decimal-leading-zero;
+}
+
+.skills__item {
+  font-weight: var(--font-medium);
+  color: var(--title-color);
+}
+
+.skills__item::marker {
+  color: var(--first-color);
+}
 
 /*_____SERVICES_____*/
 
