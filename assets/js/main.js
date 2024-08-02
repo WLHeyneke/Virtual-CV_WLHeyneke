@@ -47,8 +47,7 @@ const sendEmail = (e) => {
   e.preventDefault();
 
   // serviceID - templateID - #form - publicKey
-  emailjs
-    .sendEmail(
+  emailjs.sendEmail(
       "service_4enakae",
       "template_mii3udk",
       "#contact-form",
