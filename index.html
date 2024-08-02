@@ -33,7 +33,7 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link">Home</a>
+                        <a href="#home" class="nav__link active-link">Home</a>
                     </li>
 
                     <li class="nav__item">
@@ -83,7 +83,7 @@
                     </h1>
 
                     <h3 class="home__education">
-                        Software Developer
+                        IT Specialist
                     </h3>
 
                     <p class="home__description">
@@ -220,10 +220,10 @@
                 </h2>
 
                 <p class="skills__description">
-                    See what skills I have to deliver solutions.
+                    Check out my skills and how I deliver tailored solutions.
                 </p>
 
-                <a href="#projects" class="button">My Projects</a>
+                <a href="#projects" class="button">See Projects</a>
             </div>
 
             <div class="skills__content">
@@ -404,9 +404,13 @@
         <h2 class="section__title">
             Contact Me
         </h2>
+        
+        <h2 class="section__subtitle">  
+        <a href="mailto:willieheyneke@gmail.com?subject=Hello%20Willie&body=I%20would%20like%20to%20get%20in%20touch%20with%20you." class="email-link">willieheyneke@gmail.com</a>
+    </h2>
 
         <div class="contact__container container grid">
-            <form action="" class="contact__form" id="contact__form">
+            <form action="" class="contact__form" id="contact-form">
                 <div class="contact__group">
                     <input type="text" name="user_name" required placeholder="Enter your name" class="contact__input">
                     <input type="email" name="user_email" required placeholder="Enter your email" class="contact__input">
@@ -426,18 +430,41 @@
     </main>
     <!--___FOOTER___-->
     <footer class="footer">
+        <div class="footer__container container grid">
+            <h1 class="footer__title">
+                WL <span>Heyneke</span>
+            </h1>
 
+            <h2 class="footer__education">
+                IT Specialist
+            </h2>
+        </div>
+
+        <div class="footer__social">
+            <a href="https://www.reddit.com/user/No_Photograph5886/" target="_blank" class="footer__social-link">
+            <i class="ri-reddit-fill"></i>
+             </a>
+            <a href="https://discord.com/channels/wlhboomer" target="_blank" class="footer__social-link">
+            <i class="ri-discord-fill"></i>
+             </a>
+            <a href="https://www.linkedin.com/in/willie-heyneke-9149aaa7/" target="_blank" class="footer__social-link">
+            <i class="ri-linkedin-box-fill"></i>
+            </a>
+        </div>
+    </div>
+        
     </footer>
     <!--___SCROLL_UP___-->
+
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-circle-line"></i>
+    </a>
 
     <!--___SCROLL_REVEAL___-->
         <script src=""></script>
 
      <!--___EMAIL_JS___-->
-     <script
-     type="text/javascript"
-     src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-   </script>
+     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
      <!--___MAIN_JS___-->
         <script src="assets/js/main.js"></script>
