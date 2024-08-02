@@ -40,15 +40,15 @@ const blurHeader = () => {
 window.addEventListener("scroll", blurHeader);
 
 /*=============== EMAIL JS ===============*/
-const contactForm = document.getElementById("contact-form");
-contactMessage = document.getElementById("contact-message");
+const contactForm = document.getElementById("contact-form"),
+  contactMessage = document.getElementById("contact-message");
 
 const sendEmail = (e) => {
   e.preventDefault();
 
   // serviceID - templateID - #form - publicKey
   emailjs
-    .sendForm(
+    .sendEmail(
       "service_4enakae",
       "template_mii3udk",
       "#contact-form",
