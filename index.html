@@ -249,41 +249,46 @@
             My <span>Services
         </h3>
 
-        <h2 clas="section__title">
+        <h2 class="section__title">
             What I Do
         </h2>
 
         <div class="services__container container grid">
             <article class="services__card">
-                <i class="ri-layout-3-line"></i>
+                <i class="ri-layout-3-line services__icon"></i>
 
                 <h2 class="services__title">Web Developer</h2>
 
                     <p class="services__description">
-                        As a full-stack web developer, I offer comprehensive web development services, 
-                        specializing in creating custom web pages using the latest technologies. 
-                        My expertise covers both front-end and back-end development, 
-                        ensuring a seamless and efficient user experience. 
-                        From designing visually appealing interfaces to implementing robust server-side functionality, 
-                        I provide tailored solutions to meet your specific needs.
+                        As a full-stack web developer, I create custom web pages using the latest technologies. 
+                        My expertise in both front-end and back-end development ensures a seamless user experience. 
+                        I design appealing interfaces and implement robust server-side functionality to meet your specific needs.
 
                     </p>
             </article>
 
             <article class="services__card">
+                <i class="ri-movie-fill services__icon"></i>
 
-                <h2 class="services__title"></h2>
+                <h2 class="services__title">AV Technology Specialist</h2>
 
                     <p class="services__description">
+                        As an AV technology specialist, I provide comprehensive AV system planning and integration, 
+                        adhering to AVIXA standards. I design and implement solutions for conference rooms, auditoriums, 
+                        and other professional settings. My services ensure optimal performance and reliability.
 
                     </p>
             </article>
 
             <article class="services__card">
+                <i class="ri-pantone-fill services__icon"></i>
 
-                <h2 class="services__title"></h2>
+                <h2 class="services__title">UI/UX Designer</h2>
 
                     <p class="services__description">
+                        I design user-friendly and aesthetically pleasing web interfaces and mobile applications 
+                        using industry-standard software such as Adobe XD, Sketch, Figma, InVision, Adobe Illustrator, 
+                        Photoshop, and Zeplin.
 
                     </p>
             </article>
@@ -292,9 +297,132 @@
       </section>
       <!--___PROJECTS_SECTION___-->
       <section class="projects section" id="projects">
+
+        <h3 class="section__subtitle">
+            My <span>Jobs</span>
+        </h3>
+
+        <h2 class="section__title">
+            Recent Projects
+        </h2>
+
+        <div class="projects__container container">
+            <article class="projects__card">
+                <img src="assets/img/Project-img-1.webp" alt="projects image" class="projects__img">
+
+                <div class="projects__modal">
+                    <span class="projects__subtitle">Web</span>
+
+                    <h2 class="projects__title">Share2Teach website</h2>
+
+                    <a href="#" class="projects__button">
+                        View Demo <i class="ri-external-link-fill"></i>
+                    </a>
+                </div>
+            </article>
+
+            <article class="projects__card">
+                <img src="assets/img/Project-img-2.webp" alt="projects image" class="projects__img">
+
+                <div class="projects__modal">
+                    <span class="projects__subtitle">Web</span>
+
+                    <h2 class="projects__title">Portfolio website</h2>
+
+                    <a href="#" class="projects__button">
+                        View Demo <i class="ri-external-link-fill"></i>
+                    </a>
+                </div>
+            </article>
+
+            <article class="projects__card">
+                <img src="assets/img/Project-img-3.webp" alt="projects image" class="projects__img">
+
+                <div class="projects__modal">
+                    <span class="projects__subtitle">Web</span>
+
+                    <h2 class="projects__title">Today-I-Learned website</h2>
+
+                    <a href="#" class="projects__button">
+                        View Demo <i class="ri-external-link-fill"></i>
+                    </a>
+                </div>
+            </article>
+
+            <article class="projects__card">
+                <img src="assets/img/Project-img-4.webp" alt="projects image" class="projects__img">
+
+                <div class="projects__modal">
+                    <span class="projects__subtitle">Web</span>
+
+                    <h2 class="projects__title">Youtube clone app</h2>
+
+                    <a href="#" class="projects__button">
+                        View Demo <i class="ri-external-link-fill"></i>
+                    </a>
+                </div>
+            </article>
+
+            <article class="projects__card">
+                <img src="assets/img/Project-img-5.webp" alt="projects image" class="projects__img">
+
+                <div class="projects__modal">
+                    <span class="projects__subtitle">Web</span>
+
+                    <h2 class="projects__title">Spotify clone app</h2>
+
+                    <a href="#" class="projects__button">
+                        View Demo <i class="ri-external-link-fill"></i>
+                    </a>
+                </div>
+            </article>
+
+            <article class="projects__card">
+                <img src="assets/img/Project-img-6.webp" alt="projects image" class="projects__img">
+
+                <div class="projects__modal">
+                    <span class="projects__subtitle">Web</span>
+
+                    <h2 class="projects__title">Online Booking web app</h2>
+
+                    <a href="#" class="projects__button">
+                        View Demo <i class="ri-external-link-fill"></i>
+                    </a>
+                </div>
+            </article>
+
+        </div>grid
+
       </section>
+
       <!--___CONTACT_SECTION___-->
       <section class="contact section" id="contact">
+        <h3 class="section__subtitle">
+            Get In <span>Touch</span>
+        </h3>
+        
+        <h2 class="section__title">
+            Contact Me
+        </h2>
+
+        <div class="contact__container container grid">
+            <form action="" class="cntact_form" id="contact-form">
+                <div class="contact__group">
+                    <input type="text" name="user_name" required placeholder="Enter your name" class="contact__input">
+                    <input type="email" name="user_email" required placeholder="Enter your email" class="contact__input">
+                </div>
+
+                <textarea name="user_project" required placeholder="Enter your message" class="contact__input"></textarea>
+
+                <p class="contact__message" id="contact-message"></p>
+
+                <button type="submit" class="buttoncontact__button">
+                    Send Message
+                </button>
+            </form>
+        </div>
+
+
       </section>
     </main>
     <!--___FOOTER___-->
