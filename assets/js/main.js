@@ -46,8 +46,13 @@ const contactForm = document.getElementById("contact-form"),
 const sendEmail = (e) => {
   e.preventDefault();
 
-  // serviceID - templateID - #form - publicKey
-  emailjs.send('service_4enakae','template_h0il9mm','new FormData(contactForm)', '4nVtjP5y47mWR-F7w')
+  // serviceID - templateID - formSelector - publicKey
+  emailjs.sendForm(
+    "service_4enakae",
+    "template_h0il9mm",
+    "#contact-form",
+    "4nVtjP5y47mWR-F7w"
+  )
     .then(() => {
         //show sent message
         contactMessage.textContent = 'Message sent successfully ✅';
@@ -78,23 +83,27 @@ const scrollUp = () =>{
 window.addEventListener('scroll', scrollUp)
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
-const section = document.querySelectorAll('section[id]')
+const sections = document.querySelectorAll("section[id]");
 
 const scrollActive = () =>{
-  const scrollY = window.pageYOffset
+  const scrollY = window.pageYOffset;
 
-  SpeechRecognitionResult.forEach(current =>{
+  sections.forEach((current) => {
     const sectionHeight = current.offsetHeight,
-          sectionTop = current.offsetTop -58,
-          sectionId = current.getAttribute('id'),
-          sectionsClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']')
+      sectionTop = current.offsetTop - 58,
+      sectionId = current.getAttribute("id"),
+      sectionsClass = document.querySelector(
+        ".nav__menu a[href*=" + sectionId + "]"
+      );
 
-    if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-            sectionsClass.classList.add('active-link')
-    }else{
-            sectionsClass.classList.remove('active-link')
+    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+      sectionsClass.classList.add("active-link");
+    } else {
+      sectionsClass.classList.remove("active-link");
     }
-  })
-}
+  });
+};
+
+window.addEventListener("scroll", scrollActive);
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
